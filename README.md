@@ -3,6 +3,8 @@ Front-end developed using HTML/CSS/JS
 
 Back-end developed using Express.js and MongoDB with Socket.io library
 
+![Image of the app](https://i.ibb.co/8YtSrLG/Screenshot-32.png)
+
 ## Setup
 
 ```bash
