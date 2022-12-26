@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/fcc1b3e424.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-message fa-3x"></i>
+                <h1>My Chat App</h1>
+            </div>
+        </header>
+        <main>
+            <div class="login">
+                <h1>Register Now!</h1>
+                <form class="register-form">
+                    <label for="email">Please enter your email</label>
+                    <input name="email" type="email" id="email" required>
+                    <label for="username">Please enter your username</label>
+                    <input name="username" type="text", id="username" required>
+                    <label for="password">Please enter your password</label>
+                    <input name="password" type="password" id="password" required minlength="8">
+                    <input type="submit" value="Register">
+                </form>
+                <p>Already have an account ? <a href="/login">Login Now!</a></p>
+                <div class="error"></div>
+            </div>
+        </main>
+        <footer>
+            <h3>&#169; Ahmed Gouasmia. All Right Reserved</h3>
+            <div class="social">
+                <a href="https://github.com/SilverBullet19">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmed-gouasmia-59baa1245/">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./register.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #1876F3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 20px;
+    height: 10vh;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    header .logout {
+        padding: 3px 7px;
+        margin: 0;
+    }
+    header .logo {
+        font-size: 11px;
+    }
+
+    header .logo i {
+        scale: 0.8;
+    }
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+    max-height: 80vh;
+    position: relative;
+}
+
+main .login {
+    background-color: var(--main-color);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 30%;
+}
+
+main .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+main .login form input {
+    width: 65%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+main .login form input[type="submit"] {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+main .login form input[type="submit"]:hover {
+    background-color: white;
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+main .login a {
+    text-decoration: underline;
+    color: white;
+}
+
+main .login a:hover {
+    color: cyan;
+    transition: 0.4s;
+}
+
+footer {
+    background-color: var(--main-color);
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+
+footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: white;
+}
+
+.error {
+    color: rgb(239, 165, 28);
+    font-size: 18;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    footer .social {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .login {
+        width: 95%;
+    }
+}   

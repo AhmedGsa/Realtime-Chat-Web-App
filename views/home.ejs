@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Chat App</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "socket.io-client": "https://cdn.socket.io/4.4.1/socket.io.esm.min.js"
+          }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/fcc1b3e424.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-message fa-3x"></i>
+                <h1>My Chat App</h1>
+            </div>
+            <div class="logout">
+                Log Out
+            </div>
+        </header>
+        <main>
+            <div class="contacts">
+                <div class="top">
+                    <h1>Contacts</h1>
+                    <i class="fa-solid fa-circle-plus fa-2x add-contact"></i>
+                </div>
+                <div class="bottom">
+
+                </div>
+            </div>
+            <hr>
+            <div class="chat">
+                <div class="start">
+                    <i class="fa-solid fa-message fa-3x"></i>
+                    <p>Start Chatting Now !</p>
+                </div>
+                <div class="messages">
+
+                </div>
+                <form class="send-msg">
+                    <input type="text" placeholder="Type your message here" class="msg">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <h3>&#169; Ahmed Gouasmia. All Right Reserved</h3>
+            <div class="social">
+                <a href="https://github.com/SilverBullet19">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmed-gouasmia-59baa1245/">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                
+            </div>
+        </footer>
+    </div>
+    <div class="pop-up-bg">
+        <div class="new-contact">
+            
+        </div>
+    </div>
+    <div class="pop-up">
+        <i class="fa-solid fa-message fa-3x"></i>
+        <h1>Send new message</h1>
+        <form class="add-contact-form">
+            <label for="username">Enter the username of the contact:</label>
+            <input type="text" id="username">
+            <label for="message">Type the message you want to send</label>
+            <textarea id="message" cols="10" rows="6"></textarea>
+            <input type="submit" value="Send">
+            <div class="error"></div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
